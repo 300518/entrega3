@@ -1,0 +1,60 @@
+/* Este archivo debe ser compilado desde main.scss */
+
+$primary-color: #004080;
+$text-color: #333;
+$background-color: #f9f9f9;
+$font-stack: Arial, sans-serif;
+$link-color: #E4405F;
+$border-color: #ccc;
+
+@mixin responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin transition($prop, $time, $ease) {
+  transition: #{$prop} #{$time} #{$ease};
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+
+  h1, h2, h3 {
+    color: $primary-color;
+  }
+}
+
+.instagram-link {
+  font-size: 1.5rem;
+  color: $link-color;
+  text-decoration: none;
+  @include transition(transform, 0.2s, ease);
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 1rem;
+}
+
+img {
+  @include responsive-img;
+  border: 2px solid $border-color;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+.css_images {
+  width: 40px;
+  height: 40px;
+}
