@@ -5,10 +5,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
-body h1,
-body h2,
-body h3 {
+body h1, body h2, body h3 {
   color: #004080;
 }
 
@@ -18,7 +15,6 @@ body h3 {
   text-decoration: none;
   transition: transform 0.2s ease;
 }
-
 .instagram-link:hover {
   transform: scale(1.2);
 }
@@ -44,5 +40,15 @@ footer {
   height: 40px;
 }
 
+.anime-card {
+  transition: transform 0.3s ease;
+}
+.anime-card:hover {
+  transform: scale(1.05);
+}
+.anime-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -17,6 +17,14 @@ $border-color: #ccc;
   transition: #{$prop} #{$time} #{$ease};
 }
 
+@mixin hover-grow {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+
 // ======= Layout =======
 body {
   background-color: $background-color;
@@ -60,3 +68,10 @@ footer {
   width: 40px;
   height: 40px;
 }
+
+.anime-card {
+  @include hover-grow;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
