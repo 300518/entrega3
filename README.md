@@ -28,6 +28,7 @@ mi-proyecto/
 │   ├── shingeki.jpg
 │   ├── figura1.jpg
 │   └── figura2.jpg
+│   └── figura3.jpg
 ├── .gitignore
 └── README.md
 ```

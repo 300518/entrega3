@@ -9,6 +9,68 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="estilos/main.css" />
+    <style>
+      body {
+        animation: gradientBG 15s ease infinite;
+        background: linear-gradient(-45deg, #004080, #e4405f, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .contact-section {
+        max-width: 800px;
+        margin: 3rem auto;
+        padding: 2rem;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 0.8s ease-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      a {
+        color: #e4405f;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      a:hover {
+        color: #c12f4a;
+        transform: scale(1.05);
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: #555;
+      }
+    </style>
   </head>
   <body>
     <header class="bg-warning text-white text-center py-5">
@@ -62,17 +124,13 @@
       </div>
     </nav>
     <main class="container my-4">
-      <div class="row">
-        <div class="col-md-8">
-          <h2>Envíame un mensaje</h2>
-          <p>
-            Puedes contactarme por correo electrónico:
-            <a href="mailto:alvaro.cabezas@gmail.com"
-              >alvaro.cabezas@gmail.com</a
-            >
-          </p>
-          <p>O a través de mis redes sociales.</p>
-        </div>
+      <div class="contact-section">
+        <h2>Contacto</h2>
+        <p>
+          Puedes contactarme por correo electrónico:
+          <a href="mailto:alvaro.cabezas@gmail.com">alvaro.cabezas@gmail.com</a>
+        </p>
+        <p>O a través de mis redes sociales.</p>
       </div>
     </main>
     <footer class="bg-warning text-white text-center py-3">
